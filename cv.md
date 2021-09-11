@@ -71,5 +71,16 @@ export default combineReducers({
   </pre>
 </details>
 
+--- 
+### 4. Education
 ---
- 
+ #### _NULES 2013-2018_
+> - _Bachelor's degree | Design engineer_
+ > - _Master's degree | Design engineer_
+---
+### 5. English level
+
+_Intermediate(B1)_
+- Now I'm student in Speak Up school
+ ---
+
