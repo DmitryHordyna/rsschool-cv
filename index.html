@@ -38,8 +38,29 @@
               </ul>
 
               <div class="link-container">
+                <button
+                  type="button"
+                  class="button menu-button is-open"
+                  aria-expanded="false"
+                  data-menu-button
+                >
+                  <svg
+                    width="28"
+                    height="28"
+                    aria-label="переключатель мобільгого меню"
+                  >
+                    <use
+                      class="icon-cross"
+                      href="./img/icon.svg#icon-menu1"
+                    ></use>
+                    <use
+                      class="icon-menu"
+                      href="./img/icon.svg#icon-close"
+                    ></use>
+                  </svg>
+                </button>
                 <div class="navigation">
-                  <ul class="navigation-list">
+                  <ul class="navigation-list" data-menu>
                     <li class="navigation-item"><a href="#1">About Me</a></li>
                     <li class="navigation-item"><a href="#2">Project</a></li>
                     <li class="navigation-item"><a href="#3">Education</a></li>
@@ -324,16 +345,24 @@
           </ul>
           <h4 class="project_title second_title">Code example</h4>
           <details>
-            <pre><code>  <mark>function nicknameGenerator(name){
+            <pre><code>  <mark>
+      function nick(name){
     if (name.length &lt= 3) {
-    return "Error: Name too short"
+    return "Name too short"
   }
-  let sumbol = name.split('')[2]
+  let sumbol = name
+  .split('')[2]
   
-  if (sumbol == 'o'|| sumbol == 'i' || sumbol == 'a'|| sumbol == 'u'|| sumbol == 'e') {
-return name.split('').splice(0, 4).join('') 
+  if (sumbol == 'o'|| 
+      sumbol == 'i'||
+      sumbol == 'a'|| 
+      sumbol == 'u'|| 
+      sumbol == 'e') {
+return name.split('')
+.splice(0, 4).join('') 
   }
- return name.split('').splice(0, 3).join('') 
+ return name.split('')
+ .splice(0, 3).join('') 
  
 }</mark></code></pre>
           </details>
