@@ -38,6 +38,17 @@
               </ul>
 
               <div class="link-container">
+                <div class="navigation">
+                  <ul class="navigation-list">
+                    <li class="navigation-item"><a href="#1">About Me</a></li>
+                    <li class="navigation-item"><a href="#2">Project</a></li>
+                    <li class="navigation-item"><a href="#3">Education</a></li>
+                    <li class="navigation-item">
+                      <a href="#4">Work Experience</a>
+                    </li>
+                  </ul>
+                  <div class="underline"></div>
+                </div>
                 <div class="img-container">
                   <img class="img" src="./img/Iam.jpeg" alt="my foto" />
                 </div>
@@ -149,9 +160,14 @@
                 </p>
               </div>
               <div class="download-container">
-                <a class="download-link" target="_blank" href="./pdf/hordyna_dmytro_cv_frontend_developer.pdf"><svg class="icon-download">
-                  <use href="./img/icon.svg#icon-download"></use>
-                </svg>Download PDF CV</a>
+                <a
+                  class="download-link"
+                  target="_blank"
+                  href="./pdf/hordyna_dmytro_cv_frontend_developer.pdf"
+                  ><svg class="icon-download">
+                    <use href="./img/icon.svg#icon-download"></use></svg
+                  >Download PDF CV</a
+                >
               </div>
             </article>
           </div>
@@ -161,7 +177,7 @@
       <main class="information-container">
         <section>
           <div class="squer-container">
-            <div class="name-container">
+            <div class="name-container" id="1">
               <h1>Hordyna <span class="span-name">Dmytro</span></h1>
               <h3 class="name-profesion">Full-Stack Developer</h3>
             </div>
@@ -173,13 +189,14 @@
               Full-Stack Developer. The training provides a lot of tech-skills
               practice, participation in team projects and IT English. At this
               stage, I am completing the Javascript and React course and now
-              studying Node JS.  <br>            My goal is to become a Middle Front End Developer in two years. Open to internships and vacancies for junior.
-
+              studying Node JS. <br />
+              My goal is to become a Middle Front End Developer in two years.
+              Open to internships and vacancies for junior.
             </p>
           </div>
         </section>
 
-        <section>
+        <section id="2">
           <h3 class="title-section">PROJECTS</h3>
           <h4 class="project_title second_title">Team project</h4>
           <ul class="list project-list text">
@@ -190,7 +207,7 @@
                 href="https://art-smirnov.github.io/team-project/ "
               >
                 Team project Ice-cream
-                <span class="project_link link">
+                <span class="project_link link dotes">
                   ....................................</span
                 >
                 <span>
@@ -206,7 +223,7 @@
               >
                 Team project Event Booster
 
-                <span class="project_link link">
+                <span class="project_link link dotes">
                   .............................</span
                 >
                 <span>
@@ -224,7 +241,7 @@
                 href="https://dmitryhordyna.github.io/Template_WebStudio/"
               >
                 Web Studio
-                <span class="project_link link">
+                <span class="project_link link dotes">
                   .........................................</span
                 >
                 <span>
@@ -238,7 +255,7 @@
                 class="project_link link"
                 href="https://dmitryhordyna.github.io/Template_Barber-Shop/"
                 >Barber Shop
-                <span class="project_link link">
+                <span class="project_link link dotes">
                   .......................................</span
                 >
                 <span>
@@ -253,11 +270,11 @@
                 class="project_link link"
                 href="https://dmitryhordyna.github.io/GoIT_Finder/"
                 >The Founder
-                <span class="project_link link">
+                <span class="project_link link dotes">
                   .......................................</span
                 >
                 <span>
-                  <b>[</b> <span class="span">JavaScript</span> <b>]</b>
+                  <b>[</b> <span class="span dotes">JavaScript</span> <b>]</b>
                 </span></a
               >
             </li>
@@ -268,20 +285,20 @@
                 href="https://dmitryhordyna.github.io/GoIT_Api-Timer-ChangeTheme/"
               >
                 Country,LocalStorage,Timer
-                <span class="project_link link">...............</span>
+                <span class="project_link link dotes">...............</span>
                 <span>
-                  <b>[</b> <span class="span">JavaScript </span> <b>]</b>
+                  <b>[</b> <span class="span dotes">JavaScript </span> <b>]</b>
                 </span></a
               >
             </li>
-            <li class="project_item item">
+            <li class="project_item item dotes">
               <a
                 target="_blank"
                 class="project_link link"
                 href="https://dh-netlify-tutorial.netlify.app/"
               >
                 Filmoteka
-                <span class="project_link link"
+                <span class="project_link link dotes"
                   >.............................................</span
                 >
                 <span>
@@ -296,7 +313,7 @@
                 href="https://phone-hd.netlify.app/"
               >
                 Phonebook
-                <span class="project_link link"
+                <span class="project_link link dotes"
                   >.............................................</span
                 >
                 <span>
@@ -305,13 +322,32 @@
               >
             </li>
           </ul>
+          <h4 class="project_title second_title">Code example</h4>
+          <details>
+            <pre><code>  <mark>function nicknameGenerator(name){
+    if (name.length &lt= 3) {
+    return "Error: Name too short"
+  }
+  let sumbol = name.split('')[2]
+  
+  if (sumbol == 'o'|| sumbol == 'i' || sumbol == 'a'|| sumbol == 'u'|| sumbol == 'e') {
+return name.split('').splice(0, 4).join('') 
+  }
+ return name.split('').splice(0, 3).join('') 
+ 
+}</mark></code></pre>
+          </details>
         </section>
 
-        <section class="education-container">
+        <section class="education-container" id="3">
           <h2 class="title-section">Education</h2>
           <ul class="list">
             <li class="item education-item">
-              <a href="https://nubip.edu.ua" target="_blank" class="education-title">
+              <a
+                href="https://nubip.edu.ua"
+                target="_blank"
+                class="education-title"
+              >
                 National University of Life and Environmental Sciences of
                 Ukraine
               </a>
@@ -323,7 +359,12 @@
             </li>
 
             <li class="item education-item">
-              <a href="https://goit.global/ru/" target="_blank" class="education-title">GOIT School</a>
+              <a
+                href="https://goit.global/ru/"
+                target="_blank"
+                class="education-title"
+                >GOIT School</a
+              >
               <p class="education-text">
                 Septermber 2020 - till now
                 <span class="education-span">|</span> Online
@@ -332,7 +373,12 @@
             </li>
 
             <li class="item education-item">
-              <a href="https://rs.school" target="_blank" class="education-title">Rolling Scopes School</a>
+              <a
+                href="https://rs.school"
+                target="_blank"
+                class="education-title"
+                >Rolling Scopes School</a
+              >
               <p class="education-text">
                 July 2021 - till now
                 <span class="education-span">|</span> Online
@@ -341,7 +387,12 @@
             </li>
 
             <li class="item education-item">
-              <a href="https://speak-up.com.ua" target="_blank" class="education-title">Speak Up School</a>
+              <a
+                href="https://speak-up.com.ua"
+                target="_blank"
+                class="education-title"
+                >Speak Up School</a
+              >
               <p class="education-text">
                 October 2020 - till now
                 <span class="education-span">|</span> Online
@@ -354,7 +405,7 @@
         </section>
 
         <section>
-          <h2 class="title-section">Work Experience</h2>
+          <h2 class="title-section" id="4">Work Experience</h2>
           <ul class="list">
             <li class="item education-item">
               <h3 class="education-profecion">Design engineer</h3>
@@ -373,13 +424,14 @@
                 </li>
               </ul>
             </li>
-                  <li class="item education-item">
-              <h3 class="education-profecion">Internship from the university agricultural practices</h3>
+            <li class="item education-item">
+              <h3 class="education-profecion">
+                Internship from the university agricultural practices
+              </h3>
               <p class="education-text">
                 May 2019 - December 2021
                 <span class="education-span">|</span> Denmark
               </p>
-             
             </li>
           </ul>
         </section>
@@ -387,16 +439,17 @@
     </div>
     <footer class="footer">
       <div class="container-foter">
-        <a href="https://rs.school/js/"
-        target="_blank"
+        <a href="https://rs.school/js/" target="_blank"
           ><img
             class="rs"
             src="https://rs.school/images/rs_school_js.svg"
             alt="ссилка на rs_school_js"
           />
         </a>
-        <p>© Copyright 2021</p>
+        <p class="coop">© Copyright 2021</p>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
