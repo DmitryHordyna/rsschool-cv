@@ -40,7 +40,13 @@ h6,
 p {
   margin: 0;
 }
+.menu-button {
+  display: none;
+}
 @media screen and (max-width: 887px) {
+  .menu-button {
+    display: block;
+  }
   h1 {
     font-size: 30px;
   }
