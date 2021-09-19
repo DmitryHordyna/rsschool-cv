@@ -123,6 +123,7 @@ p {
     display: flex;
     padding-left: 25px;
     padding-right: 25px;
+    margin: 0 auto;
   }
 
   .asidebar {
