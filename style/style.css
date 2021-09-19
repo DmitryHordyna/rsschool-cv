@@ -120,6 +120,7 @@ p {
     display: none;
   }
   .container {
+    width: 1200px;
     display: flex;
     padding-left: 25px;
     padding-right: 25px;
